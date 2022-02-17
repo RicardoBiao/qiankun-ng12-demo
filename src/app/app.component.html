@@ -313,7 +313,7 @@
     <div class="spacer"></div>
 </div>
 
-<div class="content" role="main" id="ngapp-viewport">
+<div class="content" role="main">
 
   <!-- Highlight Card -->
   <div class="card highlight-card card-small">
@@ -342,10 +342,15 @@
 
   <div class="card-container">
     <button class="card card-small" (click)="selection.value = 'component'" tabindex="0">
-      <!-- <span>Go to qk-ng-app!</span> -->
-      <a routerLink="/app-ng">Go to qk-ng-app!</a>
+      <a routerLink="/app-ng">Show qk-ng-app!</a>
+    </button>
+    <button class="card card-small" (click)="selection.value = 'component'" tabindex="0">
+      <a routerLink="/">UnShow qk-ng-app!</a>
     </button>
   </div>
+  
+  <!-- 微应用容器 -->
+  <div id="ngapp-viewport"></div>
 
   <svg id="clouds" xmlns="http://www.w3.org/2000/svg" width="2611.084" height="485.677" viewBox="0 0 2611.084 485.677">
     <title>Gray Clouds Background</title>

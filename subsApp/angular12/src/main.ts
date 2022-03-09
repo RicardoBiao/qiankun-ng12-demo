@@ -39,12 +39,12 @@ export async function mount(props: any) {
     // state: 变更后的状态; prev 变更前的状态
     console.log(state, prev);
   });
+  // setTimeout(() => {
+  //   props.user.name = '798';
+  // },2000)
   setTimeout(() => {
-    props.setGlobalState({user: "123"});
-  },2000)
-  setTimeout(() => {
-    props.setGlobalState({user: "456"});
-  },2000)
+    props.setGlobalState({key: "456"});
+  },10000)
   render();
 }
 

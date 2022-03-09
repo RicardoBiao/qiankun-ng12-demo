@@ -23,12 +23,11 @@ platformBrowserDynamic().bootstrapModule(AppModule)
 
 
 // 初始化 state
-const actions: MicroAppStateActions = initGlobalState({user: 'kuitos'});
-
-actions.onGlobalStateChange((state, prev) => {
-  // state: 变更后的状态; prev 变更前的状态
-  console.log('state:',state, 'prev:',prev);
+export const Actions: MicroAppStateActions = initGlobalState({
+  key: "kkk"
 });
+
+
 
 
 registerMicroApps([
@@ -37,7 +36,7 @@ registerMicroApps([
     entry: '//localhost:4300',
     container: '#ngapp-viewport',
     activeRule: '/app-ng',
-    props: actions
+    props: Actions
   },
 ]);
 
